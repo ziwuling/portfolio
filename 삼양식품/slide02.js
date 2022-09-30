@@ -37,5 +37,12 @@ var swiper = new Swiper(".sec01", {
           // event.preventDefault()
       });
   });
-  
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
   
