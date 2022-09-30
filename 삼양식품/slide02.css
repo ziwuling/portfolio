@@ -307,78 +307,61 @@ i[class*='fa-circle']{
 /* sec03 */
 .sec03{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/sec03_slide_bg.png);
+    padding: 30.5px 0;
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: 100%;
 }
 .inner{
+    width: 1280px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+.textBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+.textBox > h3{
+    font-weight: 700;
+    font-size: 2.81rem;
+}
+.textBox > p{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color:  #EB6220;
+}
+.swiper-slide{
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 0 0 23px 0;
 }
-.Slide{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 25px;
-}
-.SlideBOX{
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    gap: 27px;
-}
-.TExtbox{
+.videoText{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
     gap: 12px;
-    color: #fff;
-    text-align: center;
 }
-.TExtbox > p{
+.videoText >h4{
     font-weight: 700;
     font-size: 1.5rem;
 }
-.TExtbox > span{
+.videoText >p{
     font-weight: 500;
     font-size: 0.93rem;
 }
-button{
+.swiper > button{
+    background-color:  #EB6220;
+    font-weight: 500;
+    font-size: 0.93rem;
     padding: 10px;
-    background-color: #EB6220;
-    color: #fff;
     border: none;
-    font-weight: 500;
-    line-height: 20px;
-    font-size: 0.93rem;
-}
-.sec03 > .inner > button:hover{
-    background-color: #fff;
-    color: #EB6220;
-}
-
-.title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-    padding-top: 27px;
-}
-.title > h1{
-    font-weight: 700;
-    font-size: 2.81rem;
     color: #fff;
-}
-.title > p{
-    font-weight: 500;
-    font-size: 1.25rem;
-    color: #EB6220;
-    text-align: center;
 }
 /* sec04 */
 .sec04{
