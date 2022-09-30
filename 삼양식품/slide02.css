@@ -306,7 +306,7 @@ i[class*='fa-circle']{
 }
 /* sec03 */
 .sec03{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/sec03_slide_bg.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/sec03_slide_bg.png);
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: 100%;
