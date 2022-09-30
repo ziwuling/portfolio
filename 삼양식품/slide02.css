@@ -361,9 +361,7 @@ button{
     background-color: #fff;
     color: #EB6220;
 }
-.SlideBOX:nth-of-type(odd)>.TExtbox{
-    opacity: 0.6;
-}
+
 .title{
     display: flex;
     flex-direction: column;
