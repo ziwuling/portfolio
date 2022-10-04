@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     word-break: keep-all;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 :root{
     font-size: 16px;
@@ -83,11 +83,11 @@ a{
 }
 .btn_pre, .btn_next{
     position: absolute;
-    top: 902px;
+    top: 800px;
     z-index: 10;
     font-size: 1.59rem;
     padding: 12.75px 17.29px;
-    color: red;
+    color: #fff;
     background: none;
     border: none;
 }
@@ -104,14 +104,14 @@ a{
     align-items: center;
     gap: 20px;
     z-index: 10;
-    color: red;
+    color: #fff;
     font-size:1.56rem;
     left: 1649px;
-    top: 905px;
+    top: 800px;
 }
 .slidenumber > p{
     font-weight: 500;
-    color: red
+    color: #fff
 }
 /* sec02 */
 .sec02 > .one{
