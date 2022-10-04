@@ -44,9 +44,9 @@ var swiper = new Swiper(".sec01", {
       el: ".swiper-pagination",
       clickable: true,
     },
-    loop:true,
-    autoplay:{
-      delay:3000,
-    }
+    // loop:true,
+    // autoplay:{
+    //   delay:3000,
+    // }
   });
   

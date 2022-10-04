@@ -81,6 +81,9 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+.swiper-slide > img {
+    background-image: url(img/sec03_playbutton.svg);
+}
 .btn_pre, .btn_next{
     position: absolute;
     top: 902px;
@@ -347,6 +350,7 @@ i[class*='fa-circle']{
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    
 }
 .videoText >h4{
     font-weight: 700;
@@ -545,8 +549,3 @@ select:nth-child(2){
     border-radius: 15px;
     padding-left: 15px;
     }
-    .swiper-slide{
-        margin: 0;
-    }
-
-
