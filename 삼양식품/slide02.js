@@ -50,3 +50,5 @@ var swiper = new Swiper(".sec01", {
     }
   });
   
+  // sec02슬라이드
+  
