@@ -350,7 +350,6 @@ i[class*='fa-circle']{
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    
 }
 .videoText >h4{
     font-weight: 700;
@@ -368,6 +367,10 @@ i[class*='fa-circle']{
     border: none;
     color: #fff;
     margin: 22px 0;
+}
+.sec03 > .inner button:hover{
+    background-color: #fff;
+    color: #EB6220;
 }
 /* sec04 */
 .sec04{
