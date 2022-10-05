@@ -12,7 +12,8 @@ var swiper = new Swiper(".sec01", {
       delay:3000,
     }
   });
-  
+
+  // top button
   $(function() {
       // var isOn = false;
       $(window).scroll(function() {
@@ -37,7 +38,8 @@ var swiper = new Swiper(".sec01", {
           // event.preventDefault()
       });
   });
-  var swiper = new Swiper(".mySwiper", {
+  // sec03슬라이드
+  var swiper = new Swiper(".slide03", {
     slidesPerView: 3,
     spaceBetween: 0,
     pagination: {
@@ -51,4 +53,22 @@ var swiper = new Swiper(".sec01", {
   });
   
   // sec02슬라이드
+  var swiper = new Swiper(".slide02_1", {
+    loop: true,
+    spaceBetween: 84,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".slide02", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
   
