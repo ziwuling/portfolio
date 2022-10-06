@@ -27,7 +27,7 @@ header{
 }
 
 
-.gnb{
+#gnb{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -73,7 +73,7 @@ a{
 }
 /* sec01슬라이드 */
 .sec01{
-    position: relative;
+    position: absolute;
     width: 100%;
 }
 .swiper-slide{
@@ -365,7 +365,6 @@ i[class*='fa-circle-chevron']{
     border: none;
     color: #fff;
     margin: 22px 0;
-    cursor: pointer;
 }
 .sec03 > .inner button:hover{
     background-color: #fff;
@@ -406,7 +405,6 @@ i[class*='fa-circle-chevron']{
     height: 47px;
     background: none;
     color: #fff;
-    cursor: pointer;
 }
 .sec04 > .INNer > .RIGHT{
     display: flex;
@@ -558,4 +556,91 @@ select:nth-child(2){
     }
     .swiper-slide{
         margin: 0;
+    }
+
+    /* nav */
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #gnb {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #gnb:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #gnb .m {
+        float: left;
+        width: 120px;
+        text-align: center;
+        position: relative;
+    }
+
+    #gnb .m>a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.4em;
+    }
+
+    #gnb .m.on>a {
+        border-bottom: 4px solid #725f3f;
+        box-sizing: border-box;
+    }
+
+    #gnb .m ul {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 100%;
+        background: #000;
+        display: none;
+    }
+
+    #gnb .m ul li a {
+        display: block;
+        color: #fff;
+        padding: 12px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    #gnb .m ul li:last-child a {
+        border: none;
+    }
+
+    #gnb .m ul li a:hover,
+    #gnb .m ul li a:active,
+    #gnb .m ul li a:focus {
+        background: #fff;
+        color: #000;
+    }
+
+    #visual {
+        background: url(f1.jpg) no-repeat center center;
+        height: 300px;
+    }
+
+    #visual a {
+        display: block;
+        width: 1000px;
+        height: 300px;
+        margin: 0 auto;
+        text-indent: -99999%;
+        overflow: hidden;
     }
