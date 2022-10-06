@@ -300,6 +300,10 @@ i[class*='fa-circle-chevron']{
     background: rgba(235, 98, 32, 0.2);
     cursor: pointer;
 }
+.buttom.on{
+    background: rgba(235, 98, 32, 0.2);
+    cursor: pointer;
+}
 /* sec03 */
 .sec03{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/sec03_slide_bg.png);

@@ -73,7 +73,154 @@ a{
     font-size: 1.87rem;
 }
 /* 헤더끝 */
-
+.one{
+    /* background-color: #EB6220; */
+    /* background-image: url(img/sub_제품리스트/패턴bg.png); */
+    padding-top: 124px;
+}
+.one_inner{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 480px;
+    background-color: #EB6220;
+    height: 187px;
+    background-image: url(img/sub_제품리스트/패턴bg.png);
+}
+.textbox{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    padding: 30px 0 47px;
+}
+.sec01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 17px;
+    gap: 10px;
+    height: 301px;
+}
+.sec01_product{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0 5px;
+    gap: 40px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 45px 65px 53px 65px;
+    color: #767676;
+}
+.menu:nth-child(2){
+    padding: 36px 65px 0 65px;
+}
+.menu:nth-child(3){
+    padding: 18px 65px 0 65px;
+}
+.menu:nth-child(4 ){
+    padding: 15px 87px 0 65px;
+    color: #EB6220;
+    font-weight: 700;
+}
+.textbox >h1{
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 82px;
+    color: #fff;
+}
+.textbox >p{
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+}
+.menu:hover{
+    color: #EB6220;
+}
+/* wrap 제품리스트 */
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 33px;
+    width: 1280px;
+    padding-bottom: 10px;
+}
+.productbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: 293.91px;
+    border-radius: 15px;
+}
+.productbox:hover{
+    border: 3px solid #EB6220;
+}
+.pbinner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+.pbinner > img{
+    width: 221.91px;
+    height: 202px;
+}
+.pbinner > p{
+    font-weight: 500;
+}
+.more{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+.more > span{
+    font-size: 2.5rem;
+    color: #C4C4C4;
+}
+/* sec03 */
+.sec03{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 80px;
+    gap: 89px;
+}
+.page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+}
+.pagenumer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+.pagenumer>p:nth-child(1){
+    text-align: center;
+    line-height: 22px;
+    background-color: #EB6220;
+    width: 37px;
+    height: 37px;
+    border-radius: 37px;
+    color: #fff;
+    font-weight: 500;
+}
 /* footer */
 footer{
     display: flex;

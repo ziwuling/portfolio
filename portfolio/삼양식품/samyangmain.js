@@ -71,6 +71,12 @@ var swiper = new Swiper(".sec01", {
       swiper: swiper,
     },
   });
+  // buttom 클릭색상변경
+  $(function(){
+    $('.buttom').click(function(){
+        $(this).addClass('on').siblings().removeClass('on');
+    });
+  });
 
   
   
