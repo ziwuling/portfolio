@@ -74,14 +74,17 @@ a{
 /* sec01슬라이드 */
 .sec01{
     position: relative;
-    width: 100%;
+    width: 1920px;
 }
 .swiper-slide{
     display: flex;
     margin-left: auto;
     margin-right: auto;
 }
-.btn_pre, .btn_next{
+.sec01bg > img{
+    width: 100%;
+}
+.sec01 .btn_pre, .btn_next{
     position: absolute;
     top: 800px;
     z-index: 10;
@@ -97,21 +100,14 @@ a{
 .btn_next{
     left: 1587px;
 }
-.slidenumber{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    z-index: 10;
+.sec01 > .swiper-pagination{
     color: #fff;
-    font-size:1.56rem;
-    left: 1649px;
-    top: 800px;
-}
-.slidenumber > p{
-    font-weight: 500;
-    color: #fff
+    font-size: 1.75rem;
+    font-weight: 700;
+    top:805px;
+    width: 121px;
+    left: 1648px;
+    letter-spacing: 0.75rem;
 }
 /* sec02 */
 .sec02 > .one{
@@ -120,6 +116,7 @@ a{
     justify-content: center;
     align-items: center;
     gap: 31px;
+    padding-top: 50px;
 }
 .sec02 >.swiper-slide > .left{
     display: flex;
@@ -234,7 +231,6 @@ a{
     justify-content: center;
     align-items: center;
     padding: 50px 0 0;
-    gap: 33.86px;
 }
 .four > .TextBox{
     display: flex;
@@ -265,7 +261,7 @@ a{
 /* sec02_buttom */
 .slide02_1{
     width: 1280px;
-    margin: 50px 0;
+    margin: 50px auto;
 }
 .buttom{
     display: flex;
@@ -335,19 +331,21 @@ i[class*='fa-circle-chevron']{
     font-size: 1.25rem;
     color:  #EB6220;
 }
-.swiper-slide{
-    margin-bottom: 30px;
+.slide03 >.swiper-wrapper > .swiper-slide{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    padding: 0;
+    gap: 25px;
+}
+.slide03 >.swiper-wrapper > .swiper-slide >img{
+    filter: brightness(0.3);
 }
 .videoText{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    
+    opacity: 0.5;
 }
 .videoText >h4{
     font-weight: 700;

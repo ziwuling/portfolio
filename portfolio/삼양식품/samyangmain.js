@@ -1,15 +1,15 @@
-var swiper = new Swiper(".sec01", {
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
-    navigation: {
-      nextEl: ".btn_pre",
-      prevEl: ".btn_next",
-    },
-    loop:true,
-    autoplay:{
-      delay:3000,
+var sec01 = new Swiper(".sec01", {
+  pagination: {
+    el: ".sec01 .swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".sec01 .btn_pre",
+    prevEl: ".sec01 .btn_next",
+  },
+  loop:true,
+  autoplay:{
+  delay:4000,
     }
   });
 
@@ -39,11 +39,11 @@ var swiper = new Swiper(".sec01", {
       });
   });
   // sec03슬라이드
-  var swiper = new Swiper(".slide03", {
+  var slide03 = new Swiper(".slide03", {
     slidesPerView: 3,
-    spaceBetween: 0,
+    spaceBetween: 25,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".slide03 .swiper-pagination",
       clickable: true,
     },
     loop:true,
@@ -53,30 +53,25 @@ var swiper = new Swiper(".sec01", {
   });
   
   // sec02슬라이드
-  var swiper = new Swiper(".slide02_1", {
+  var slide02_1 = new Swiper(".slide02_1", {
     loop: true,
     spaceBetween: 84,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+   loop : false,
   });
-  var swiper2 = new Swiper(".slide02", {
+  var slide02 = new Swiper(".slide02", {
     loop: true,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
     thumbs: {
-      swiper: swiper,
+      swiper: slide02_1,
     },
   });
-  // buttom 클릭색상변경
+  // bottom 클릭색상변경
   $(function(){
     $('.buttom').click(function(){
         $(this).addClass('on').siblings().removeClass('on');
     });
   });
 
-  
   
