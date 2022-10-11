@@ -575,8 +575,11 @@ select:nth-child(2){
     }
 
     #gnb {
-        width: 100%;
+        width: 1008px;
         margin: 0 auto;
+        position: absolute;
+        z-index: 10;
+        padding-left: 380px;
     }
 
     #gnb:after {
@@ -597,10 +600,11 @@ select:nth-child(2){
         height: 40px;
         line-height: 40px;
         font-size: 1.4em;
+        width: 180%;
     }
 
     #gnb .m.on>a {
-        border-bottom: 4px solid #725f3f;
+        border-bottom: 4px solid #EB6220;
         box-sizing: border-box;
     }
 
@@ -608,7 +612,7 @@ select:nth-child(2){
         position: absolute;
         left: 0;
         top: 40px;
-        width: 100%;
+        width: 180%;
         background: #000;
         display: none;
     }
