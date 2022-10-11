@@ -8,26 +8,76 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  
 </head>
 <body>
-    <header>
-        <a href="#"><img src="img/header_samyanglogo.svg" alt="로고"></a>
-        <ul class="gnb">
-                <li><a href="#">회사소개</a></li>
-                <li><a href="#">홍보관</a></li>
-                <li><a href="#">지속가능경영</a></li>
-                <li><a href="#">브랜드</a></li>
-                <li><a href="#">제품</a></li>
-                <li><a href="#">고객지원</a></li>
-        </ul>  
-            <div class="right">
-                <a href="#">투자정보</a>
-                <a href="#">인재채용</a> 
-                <select name="lang">
-                    <option>KR</option>
-                    <option>EN</option>
-                    <option>JP</option>
-                </select>
-                <i class="fa-solid fa-bars" role="button"></i>
-            </div>
+  <header>
+    <a href="#"><img src="img/header_samyanglogo.svg" alt="로고"></a>
+    <ul class="gnb">
+        <li class="m">
+            <a href="#">회사소개</a>
+            <ul>
+                <li><a href="#">삼양식품</a></li>
+                <li><a href="#">지주사</a></li>
+                <li><a href="#">계열사</a></li>
+                <li><a href="#">해외법인</a></li>
+                <li><a href="#">공장</a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
+        </li>
+        <li class="m"><a href="#">홍보관</a>
+            <ul>
+                <li><a href="#">삼양소식</a></li>
+                <li><a href="#">홍보영상</a></li>
+                <li><a href="#">호치와 친구들</a></li>
+                <li><a href="#">음원/영상</a></li>
+                <li><a href="#">엠버서더</a></li>
+                <li><a href="#">삼양역사관</a></li>
+                <li><a href="#">삼양사연</a></li>
+                <li><a href="#">레시피</a></li>
+            </ul>
+        </li>
+        <li class="m"><a href="#">지속가능경영</a>
+            <ul>
+                <li><a href="#">안전보건환경</a></li>
+                <li><a href="#">윤리・인권경영</a></li>
+                <li><a href="#">소비자중심경영</a></li>
+                <li><a href="#">사회공헌</a></li>
+                <li><a href="#">지배구조</a></li>
+            </ul>
+        </li>
+        <li class="m"><a href="#">브랜드</a>
+            <ul>
+                <li><a href="#">삼양라면</a></li>
+                <li><a href="#">불닭볶음면</a></li>
+                <li><a href="#">짜짜로니</a></li>
+                <li><a href="#">별뽀빠이</a></li>
+                <li><a href="#">삼양유기농우유</a></li>
+            </ul>
+        </li>
+        <li class="m"><a href="#">제품</a>
+            <ul>
+                <li><a href="#">라면</a></li>
+                <li><a href="#">스낵</a></li>
+                <li><a href="#">유제품</a></li>
+                <li><a href="#">소스・간편식</a></li>
+            </ul>
+        </li>
+        <li class="m"><a href="#">고객지원</a>
+            <ul>
+                <li><a href="#">고객만족센터</a></li>
+                <li><a href="#">고객문의</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="right">
+        <a href="#">투자정보</a>
+        <a href="#">인재채용</a> 
+        <select name="lang">
+            <option>KR</option>
+            <option>EN</option>
+            <option>JP</option>
+        </select>
+        <i class="fa-solid fa-bars" role="button"></i>
+    </div>
     </header>
 
     <!-- sec01 -->
@@ -260,12 +310,12 @@
                  <i class="fa-brands fa-twitter" role="button" onclick="window.open('https://twitter.com/samyangfoods')"></i>
                  <i class="fa-brands fa-facebook-f" role="button" onclick="window.open('https://www.facebook.com/samyangfoods')"></i>
             </div>
-            <select class="familysite">
+            <select class="familysite" onchange="window.open(value,'_blank')">
                 <option>Famliy Site</option>
-                <option>삼양맛샵</option>
-                <option>삼양목장</option>
-                <option>삼양이건장학재단</option>
-                <option>삼양원동문화재단</option>
+                <option value="https://brand.naver.com/syfoodshop">삼양맛샵</option>
+                <option value="https://www.samyangfarm.co.kr/">삼양목장</option>
+                <option value="http://www.sy-igdream.or.kr/">삼양이건장학재단</option>
+                <option value="http://www.samyangmotivef.or.kr/">삼양원동문화재단</option>
             </select>
         </div>
     </footer>

@@ -25,21 +25,13 @@ header{
     padding: 7px 31px;
     justify-content: space-between;
 }
-
-
-.gnb{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 120px;
-}
-.gnb a {
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: #000;
-}
-li{
+li {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 .right{
     display: flex;
@@ -65,16 +57,63 @@ li{
     font-weight: 700;
     font-size: 1.25rem;
 }
-a{
-    text-decoration: none;
-}
 .fa-bars{
     font-size: 1.87rem;
+}
+.gnb > .m {
+    float: left;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    height: 67px;
+    
+}
+.gnb .m a{
+    display: block;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 67px;
+
+}
+.gnb .m.on {
+    border-bottom: 4px solid #EB6220;
+    box-sizing: border-box;
+}
+.gnb .m ul {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 68px;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+.gnb .m ul li a {
+    display: block;
+    color: #3A3A3A;
+    font-weight: 400;
+    height: 50px;
+    font-size: 0.93rem;
+    line-height: 50px;
+}
+.gnb .m ul li:last-child a {
+    border: none;
+}
+.gnb .m ul li a:hover,
+.gnb .m ul li a:active,
+.gnb .m ul li a:focus {
+    border-bottom: 2px solid #EB6220;
+    color: #EB6220;
+}
+.gnb:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 /* sec01슬라이드 */
 .sec01{
     position: relative;
-    width: 1920px;
+    width: 100%;
 }
 .swiper-slide{
     display: flex;
