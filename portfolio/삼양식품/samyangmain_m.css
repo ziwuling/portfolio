@@ -1,8 +1,15 @@
 @charset "UTF-8";
+/* 삼양식품 모바일 CSS */
+
 body{
     min-width: 320px;
 }
 header{
     height: 61px;
     background-color: #EB6220;
+}
+header a img{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(200%) contrast(200%);
+    width: 94px;
+    height: 29px;
 }
