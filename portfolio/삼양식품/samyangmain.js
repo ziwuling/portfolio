@@ -1,16 +1,14 @@
 // header
 $(function() {
   $(".gnb .m").on("mouseenter focusin", function() {
-      $("ul", this).show(); // #gnb .m의 자식 ul
+      $("ul", this).show();
       $(this).siblings("li").find("ul").hide();
       $(this).addClass("on").siblings("li").removeClass("on");
   }).on("mouseleave", function() {
       $(".gnb ul").hide().add(".gnb .m").removeClass("on");
-      // $("#gnb ul").hide();     
-      // $("#gnb .m").removeClass("on");             
+                
   });
   $("*:not('.gnb a')").on("focus", function() {
-      // 모든객체 중 #gnb a가 아닌 요소들에 포커스가 들어오면  => nav를 벗어나면
       $(".gnb ul").hide().add(".gnb .m").removeClass("on");
   });
 });
@@ -33,27 +31,17 @@ var sec01 = new Swiper(".sec01", {
 
   // top button
   $(function() {
-      // var isOn = false;
       $(window).scroll(function() {
           if ($(this).scrollTop() > 100) {
-              // if (!isOn) {
                   $(".topbutton").addClass("on");
-                  // isOn = true;
-              // }
           } else {
-              // if (isOn) {
                   $(".topbutton").removeClass("on");
-                  // isOn = false;
-              // }
           }
       });
       $(".topbutton").click(function() {
-          // $(window).scrollTop(0);
           $("html, body").animate({
               scrollTop: 0
           },500);
-          // return false;
-          // event.preventDefault()
       });
   });
   // sec03슬라이드
