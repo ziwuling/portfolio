@@ -67,7 +67,8 @@ var sec01 = new Swiper(".sec01", {
     loop:true,
     autoplay:{
       delay:3000,
-    }
+    },
+    centeredSlides: true, 
   });
   
   // sec02슬라이드

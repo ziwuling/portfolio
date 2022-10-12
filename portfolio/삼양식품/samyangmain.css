@@ -320,9 +320,6 @@ a {
 .buttom > span {
     color: #EB6220;
 }
-.buttom .click {
-    background: rgba(235, 98, 32, 0.2);
-}
 .swiper-button-next::after,
 .swiper-button-prev::after {
     display: none;
@@ -377,7 +374,7 @@ i[class*='fa-circle-chevron'] {
     gap: 25px;
 }
 .slide03 > .swiper-wrapper > .swiper-slide > img {
-    filter: brightness(0.3);
+    filter: brightness(0.5);
 }
 .videoText {
     display: flex;
@@ -393,6 +390,12 @@ i[class*='fa-circle-chevron'] {
 .videoText > p {
     font-weight: 500;
     font-size: 0.93rem;
+}
+.slide03 .swiper-slide.swiper-slide-active >img{
+    filter: brightness(1);
+}
+.slide03 .swiper-slide.swiper-slide-active >.videoText{
+    opacity: 1;
 }
 .sec03 > .inner button {
     background-color: #EB6220;
