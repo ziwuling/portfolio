@@ -79,6 +79,16 @@ var sec01 = new Swiper(".sec01", {
     $('.buttom').click(function(){
         $(this).addClass('on').siblings().removeClass('on');
     });
+    if($(document).width()>1200){
+      $('.buttom').eq(0).trigger('click')
+
+    }
   });
 
-  
+// 모바일화면 햄버거버튼 클릭시 nav보이게
+const menubutton = document.querySelector('.material-symbols-outlined');
+const gnb = document.querySelector('.gnb')
+menubutton.addEventListener('click', ()=> {
+    gnb.classList.toggle('active')
+});
+
