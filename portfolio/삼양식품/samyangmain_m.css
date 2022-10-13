@@ -1,15 +1,150 @@
 @charset "UTF-8";
 /* 삼양식품 모바일 CSS */
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    outline: 1px solid red;
+}
 body{
     min-width: 320px;
+    display: flex;
+    flex-direction: column;
 }
 header{
     height: 61px;
     background-color: #EB6220;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gnb{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 20;
+}
+.gnb .m{
+    width: 100%;
+}
+.right{
+    z-index: 20;
+}
+.right a , select{
+    display: none;
+}
+.right .material-symbols-outlined{
+    position: absolute;
+    right: 32px;
+    top: 15px;
+    font-size: 2rem;
+    color: #fff;
+    display: block;
 }
 header a img{
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(200%) contrast(200%);
     width: 94px;
     height: 29px;
+}
+.gnb{
+    display: none;
+    background-color: #fff;
+}
+.gnb.active{
+    display: flex;
+}
+.sec02 {
+    display: none;
+}
+.slide02_1{
+    width: 100%;
+}
+.product{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.buttom{
+    width: 150px !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 166px;
+    margin: 0 !important;
+    border: 2px solid #EB6220;
+}
+.buttom p{
+    font-weight: 500;
+    font-size: 12px;
+    color: #767676;
+}
+.buttom span{
+    display: none;
+}
+.buttom img{
+    width: 120px;
+}
+.sec03{
+    width: 100%;
+    background: none;
+}
+.sec03 .inner{
+    width: 100%;
+    padding: 5px 0;
+    /* border-bottom: 1px solid #555555; */
+}
+.textBox{
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 20px;
+    margin: 0;
+}
+.textBox h3{
+    font-weight: 500;
+    font-size: 34px;
+    color: #555;
+}
+.textBox p{
+    display: none;
+}
+.slide03{
+    display: flex;
+    padding: 15px 26.5px;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555 ;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+.slide03 button{
+    display: none;
+}
+.slide03-2 img{
+    border-radius: 0px 20px;
+}
+.videoText{
+    display: none;
+}
+.sec04{
+    width: 100%;
+    height: 70px;
+}
+.INNer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+.sec05{
+    display: none;
+}
+footer{
+    display: none;
+}
+.topbutton{
+    display: none;
 }

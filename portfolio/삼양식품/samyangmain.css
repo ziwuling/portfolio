@@ -57,6 +57,9 @@ a {
     font-weight: 700;
     font-size: 1.25rem;
 }
+.right .fa-bars{
+    display: none;
+}
 .gnb > .m {
     float: left;
     width: 200px;
