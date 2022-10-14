@@ -236,6 +236,9 @@ nav .snb ul li a:hover{
     align-items: flex-end;
     gap: 11px;
 }
+.more:hover a{
+    scale: 1.5;
+}
 .TextBox > h2 {
     font-weight: 500;
     font-size: 4.06rem;
