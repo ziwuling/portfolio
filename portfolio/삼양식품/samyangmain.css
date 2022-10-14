@@ -158,6 +158,7 @@ nav .snb ul li{
 }
 nav .snb ul li a{
     color: #888;
+    font-weight: 500;
 }
 nav .snb ul li a:hover{
     color: #EB6220;
