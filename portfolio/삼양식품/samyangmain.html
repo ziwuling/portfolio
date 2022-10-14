@@ -1,89 +1,140 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
   <title>삼양식품</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="samyangmain.css">
-  <link rel="stylesheet" media="all and (max-width: 1200px)" href="samyangmain_m.css">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" media="all and (max-width: 640px)" href="samyangmain_m.css">
 </head>
-
 <body>
   <header>
-    <a href="#"><img src="img/header_samyanglogo.svg" alt="로고"></a>
-    <ul class="gnb">
-      <li class="m">
-        <a href="#">회사소개</a>
-        <ul>
-          <li><a href="#">삼양식품</a></li>
-          <li><a href="#">지주사</a></li>
-          <li><a href="#">계열사</a></li>
-          <li><a href="#">해외법인</a></li>
-          <li><a href="#">공장</a></li>
-          <li><a href="#">오시는길</a></li>
-        </ul>
-      </li>
-      <li class="m"><a href="#">홍보관</a>
-        <ul>
-          <li><a href="#">삼양소식</a></li>
-          <li><a href="#">홍보영상</a></li>
-          <li><a href="#">호치와 친구들</a></li>
-          <li><a href="#">음원/영상</a></li>
-          <li><a href="#">엠버서더</a></li>
-          <li><a href="#">삼양역사관</a></li>
-          <li><a href="#">삼양사연</a></li>
-          <li><a href="#">레시피</a></li>
-        </ul>
-      </li>
-      <li class="m"><a href="#">지속가능경영</a>
-        <ul>
-          <li><a href="#">안전보건환경</a></li>
-          <li><a href="#">윤리・인권경영</a></li>
-          <li><a href="#">소비자중심경영</a></li>
-          <li><a href="#">사회공헌</a></li>
-          <li><a href="#">지배구조</a></li>
-        </ul>
-      </li>
-      <li class="m"><a href="#">브랜드</a>
-        <ul>
-          <li><a href="#">삼양라면</a></li>
-          <li><a href="#">불닭볶음면</a></li>
-          <li><a href="#">짜짜로니</a></li>
-          <li><a href="#">별뽀빠이</a></li>
-          <li><a href="#">삼양유기농우유</a></li>
-        </ul>
-      </li>
-      <li class="m"><a href="#">제품</a>
-        <ul>
-          <li><a href="#">라면</a></li>
-          <li><a href="#">스낵</a></li>
-          <li><a href="#">유제품</a></li>
-          <li><a href="#">소스・간편식</a></li>
-        </ul>
-      </li>
-      <li class="m"><a href="#">고객지원</a>
-        <ul>
-          <li><a href="#">고객만족센터</a></li>
-          <li><a href="#">고객문의</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </li>
-    </ul>
-    <div class="right">
-      <a href="#">투자정보</a>
-      <a href="#">인재채용</a>
-      <select name="lang">
-        <option>KR</option>
-        <option>EN</option>
-        <option>JP</option>
-      </select>
-      <span class="material-symbols-outlined">menu</span>
+    <div class="logo">
+        <a href="#"><img src="img/header_samyanglogo.svg" alt="logo"></a>
     </div>
-  </header>
-
+    <div class="headerright">
+        <a href="#">투자정보</a>
+        <a href="#">인재채용</a>
+        <select name="lang">
+          <option>KR</option>
+          <option>EN</option>
+          <option>JP</option>
+        </select>
+    </div>
+    <div class="mMenuBt"></div>
+</header>
+<nav>
+    <ul class="gnb">
+        <li class="mCloseBt"></li>
+        <li class="gnbMenu">
+            <div class="title">회사소개</div>
+            <ul class="mSnb">
+                <li><a href="#">삼양식품</a></li>
+                <li><a href="#">지주사</a></li>
+                <li><a href="#">계열사</a></li>
+                <li><a href="#">해외법인</a></li>
+                <li><a href="#">공장</a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
+        </li>
+        <li class="gnbMenu">
+            <div class="title">홍보관</div>
+            <ul class="mSnb">
+                <li><a href="#">삼양소식</a></li>
+                <li><a href="#">홍보영상</a></li>
+                <li><a href="#">호치와 친구들</a></li>
+                <li><a href="#">음원/영상</a></li>
+                <li><a href="#">엠버서더</a></li>
+                <li><a href="#">삼양역사관</a></li>
+                <li><a href="#">삼양 사연</a></li>
+                <li><a href="#">레시피</a></li>
+            </ul>
+        </li>
+        <li class="gnbMenu">
+            <div class="title">지속가능경영</div>
+            <ul class="mSnb">
+                <li><a href="#">안전보건환경</a></li>
+                <li><a href="#">윤리・인권경영</a></li>
+                <li><a href="#">소비자중심경영</a></li>
+                <li><a href="#">사회공헌</a></li>
+                <li><a href="#">지배구조</a></li>
+            </ul>
+        </li>
+        <li class="gnbMenu">
+            <div class="title">브랜드</div>
+            <ul class="mSnb">
+                <li><a href="#">삼양라면</a></li>
+                <li><a href="#">불닭볶음면</a></li>
+                <li><a href="#">짜짜로니</a></li>
+                <li><a href="#">별뽀빠이</a></li>
+                <li><a href="#">삼양유기농우유</a></li>
+            </ul>
+        </li>
+        <li class="gnbMenu">
+            <div class="title">제품</div>
+            <ul class="mSnb">
+                <li><a href="#">라면</a></li>
+                <li><a href="#">스낵</a></li>
+                <li><a href="#">유제품</a></li>
+                <li><a href="#">소스・간편식</a></li>
+            </ul>
+        </li>
+        <li class="gnbMenu">
+            <div class="title">고객지원</div>
+            <ul class="mSnb">
+                <li><a href="#">고객만족센터</a></li>
+                <li><a href="#">고객문의</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </li>
+        <li class="snb">
+            <ul>
+                <li><a href="#">삼양식품</a></li>
+                <li><a href="#">지주사</a></li>
+                <li><a href="#">계열사</a></li>
+                <li><a href="#">해외법인</a></li>
+                <li><a href="#">공장</a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">삼양소식</a></li>
+                <li><a href="#">홍보영상</a></li>
+                <li><a href="#">호치와 친구들</a></li>
+                <li><a href="#">음원/영상</a></li>
+                <li><a href="#">엠버서더</a></li>
+                <li><a href="#">삼양역사관</a></li>
+                <li><a href="#">삼양 사연</a></li>
+                <li><a href="#">레시피</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">안전보건환경</a></li>
+                <li><a href="#">윤리・인권경영</a></li>
+                <li><a href="#">소비자중심경영</a></li>
+                <li><a href="#">사회공헌</a></li>
+                <li><a href="#">지배구조</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">삼양라면</a></li>
+                <li><a href="#">불닭볶음면</a></li>
+                <li><a href="#">짜짜로니</a></li>
+                <li><a href="#">별뽀빠이</a></li>
+                <li><a href="#">삼양유기농우유</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">라면</a></li>
+                <li><a href="#">스낵</a></li>
+                <li><a href="#">유제품</a></li>
+                <li><a href="#">소스・간편식</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">고객만족센터</a></li>
+                <li><a href="#">고객문의</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
   <!-- sec01 -->
   <div class="swiper sec01">
     <div class="swiper-wrapper">
@@ -122,7 +173,7 @@
           </svg>
           <div class="more">
             <p>라면 전체제품보러가기</p>
-            <img src="img/sec02_전체상품icon.svg" alt="전체제품보러가기">
+            <a href="samyangsub_02product_sause.html"><img src="img/sec02_전체상품icon.svg" alt="전체제품보러가기"></a>
           </div>
         </div>
       </div>
@@ -357,3 +408,4 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="samyangmain.js" defer></script>
 </body>
+</html>

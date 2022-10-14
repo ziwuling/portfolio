@@ -1,17 +1,21 @@
 // header
-$(function() {
-  $(".gnb .m").on("mouseenter focusin", function() {
-      $("ul", this).show();
-      $(this).siblings("li").find("ul").hide();
-      $(this).addClass("on").siblings("li").removeClass("on");
-  }).on("mouseleave", function() {
-      $(".gnb ul").hide().add(".gnb .m").removeClass("on");
-                
+$(function () {
+  $(".mMenuBt").click(function () {
+      $("nav").addClass("open");
   });
-  $("*:not('.gnb a')").on("focus", function() {
-      $(".gnb ul").hide().add(".gnb .m").removeClass("on");
+  $(".mCloseBt").click(function () {
+      $("nav").removeClass("open");
   });
 });
+if ($(window).width() < 641) {
+  // 모바일용 아코디언 메뉴
+  $(".mSnb").hide();
+  $(".gnbMenu > .title").click(function () {
+      $(this).next().slideToggle(300);
+      $(".gnbMenu > .title").not(this).next().slideUp(300);
+      return false;
+  });
+}
  
 
 var sec01 = new Swiper(".sec01", {

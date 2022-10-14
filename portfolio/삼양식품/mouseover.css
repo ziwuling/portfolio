@@ -24,13 +24,14 @@ header{
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    background-color: brown;
+    background-color: #f4f4f6;
     padding: 5px 10px;
 }
-.logo{
+header.logo{
     width: 50%;
+    margin: 0 20px 0 0;;
 }
-.logo a img{
+.logo a{
     width: 155px;
     height: 47px;
 }
@@ -64,17 +65,19 @@ header{
 .headerright .fa-bars{
     display: none;
 }
-header .mMenuBt {
+header .mMenuBt{
     display: none;
 }
 /* nav */
 nav{
-    height: 60px;
     font-weight: 700;
     position: relative;
 }
 nav:hover{
     border-bottom: 1px solid #ccc;
+}
+nav a:visited{
+    color: #000;
 }
 nav ul.gnb{
     width: 1000px;

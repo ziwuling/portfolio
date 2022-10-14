@@ -1,50 +1,61 @@
 @charset "UTF-8";
-*{
-    border: 1px solid black;
-}
-body{
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    word-break: keep-all;
+    /* outline: 1px solid #fff; */
+}
+body{
     min-width: 360px;
 }
 header{
     width: 100%;
-    background-color:  #EB6220;
+    height: 100px;
+    background-color:#EB6220;
 }
-header .logo a{
+header .logo {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(200%) contrast(200%);
-    width: 50%;
-    height: 100%;
+    width: 35%;
 }
 header .headerright{
     display: none;
 }
 header .mMenuBt{
-    width: 50%;
-    height: 48px;
-    background: url(img/삼양식품M_main/Menu.svg) 50% 50% no-repeat;
-    margin: 0 20px 0 0;
-    border: 1px solid blue;
-    background: violet;
-}
-nav{
-    position: absolute;
-    width: 0;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    background-color: aqua;
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
-    z-index: 1000;
-}
-nav .open{
-    width: 90%;
-}
-nav ul.gnb .mCloseBt{
     display: block;
     width: 48px;
     height: 48px;
+    background: url(img/삼양식품M_main/Menu.svg) 50% 50% no-repeat;
+    margin: 0 20px 0 0;
+}
+nav{
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: rgba(235,98,32,0.9);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+    color: #fff;
+}
+nav.open{
+    width: 90%;
+}
+nav ul.gnb{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding: 120px 50px 50px; 
+    width: 100%;
+    position: relative;
+}
+nav ul.gnb .mCloseBt{
+    display: block;
+    width: 50px;
+    height: 50px;
     background: url(img/삼양식품M_main/xbutton.svg) 50% 50% no-repeat;
     position: absolute;
     top: 25px;
@@ -52,7 +63,7 @@ nav ul.gnb .mCloseBt{
 }
 nav ul.gnb li.gnbMenu{
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid #FFF;
 }
 nav ul.gnb li.gnbMenu .title{
     width: 100%;
@@ -60,7 +71,6 @@ nav ul.gnb li.gnbMenu .title{
     line-height: 60px;
     text-align: center;
 }
-nav ul.gnb ul.mSnb{ width: 100%; }
 nav ul.gnb ul.mSnb li{
     width: 100%;
     height: 40px;
@@ -68,6 +78,10 @@ nav ul.gnb ul.mSnb li{
     font-size: 16px;
     margin: 1px 0 0 0;
     display: block;
-    background: rgba(0,0,0,0.2);
+    background: rgba(255,187,154,0.5);
+}
+nav ul.gnb ul.mSnb li a{
+    color: #fff;
+    font-weight: 400;
 }
 nav .snb{ display: none; }
