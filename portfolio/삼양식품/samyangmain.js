@@ -1,4 +1,4 @@
-// header
+// 헤더
 $(function () {
   $(".mMenuBt").click(function () {
       $("nav").addClass("open");
@@ -88,11 +88,3 @@ var sec01 = new Swiper(".sec01", {
 
     }
   });
-
-// 모바일화면 햄버거버튼 클릭시 nav보이게
-const menubutton = document.querySelector('.material-symbols-outlined');
-const gnb = document.querySelector('.gnb')
-menubutton.addEventListener('click', ()=> {
-    gnb.classList.toggle('active')
-});
-
