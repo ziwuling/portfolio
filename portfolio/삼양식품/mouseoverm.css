@@ -7,18 +7,14 @@ body{
     margin: 0;
     min-width: 360px;
 }
-body{
-    padding: 0;
-    margin: 0;
-    min-width: 360px;
-}
 header{
     width: 100%;
     background-color:  #EB6220;
 }
-header .logo{
+header .logo a{
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(200%) contrast(200%);
     width: 50%;
+    height: 100%;
 }
 header .headerright{
     display: none;
