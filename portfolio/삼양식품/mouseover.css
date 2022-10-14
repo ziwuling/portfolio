@@ -24,7 +24,7 @@ header{
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    background-color: #f4f4f6;
+    background-color: brown;
     padding: 5px 10px;
 }
 .logo{
@@ -84,11 +84,9 @@ nav ul.gnb{
     align-items: center;
     margin: 0 auto;
 }
-nav ul.gnb .title:hover{
-    border-bottom: 3px solid #EB6220;
-}
+
 nav ul.gnb li.gnbMenu {
-    width: 250px;
+    /* width: 250px; */
     height: 100%;
     text-align: center;
     font-size: 20px;
@@ -102,6 +100,23 @@ nav ul.gnb li.gnbMenu .title{
     line-height: 60px;
     text-align: center;
     display: block;
+    position: relative;
+}
+
+nav ul.gnb li.gnbMenu .title::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+    background-color: #EB6220;
+    transition:  all 0.5s ease-out;
+}
+nav ul.gnb li.gnbMenu .title:hover::after{
+    width: 100%;
+    transition: all 0.5s ease-out;
 }
 /* 모바일용 서브메뉴 숨기기 */
 nav ul.gnb ul.mSnb { display: none; } 
@@ -131,5 +146,10 @@ nav .snb ul li{
     height: 40px;
     line-height: 40px;
     text-align: center;
-    color: red;
+}
+nav .snb ul li a{
+    color: #888;
+}
+nav .snb ul li a:hover{
+    color: #EB6220;
 }

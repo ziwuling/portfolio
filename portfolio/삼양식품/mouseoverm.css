@@ -1,0 +1,77 @@
+@charset "UTF-8";
+*{
+    border: 1px solid black;
+}
+body{
+    padding: 0;
+    margin: 0;
+    min-width: 360px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    min-width: 360px;
+}
+header{
+    width: 100%;
+    background-color:  #EB6220;
+}
+header .logo{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(200%) contrast(200%);
+    width: 50%;
+}
+header .headerright{
+    display: none;
+}
+header .mMenuBt{
+    width: 50%;
+    height: 48px;
+    background: url(img/삼양식품M_main/Menu.svg) 50% 50% no-repeat;
+    margin: 0 20px 0 0;
+    border: 1px solid blue;
+    background: violet;
+}
+nav{
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: aqua;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+}
+nav .open{
+    width: 90%;
+}
+nav ul.gnb .mCloseBt{
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(img/삼양식품M_main/xbutton.svg) 50% 50% no-repeat;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+nav ul.gnb li.gnbMenu{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+nav ul.gnb li.gnbMenu .title{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+nav ul.gnb ul.mSnb{ width: 100%; }
+nav ul.gnb ul.mSnb li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    margin: 1px 0 0 0;
+    display: block;
+    background: rgba(0,0,0,0.2);
+}
+nav .snb{ display: none; }
