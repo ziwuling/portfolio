@@ -213,7 +213,7 @@ nav .snb ul li a:hover{
     font-weight: 400;
     font-size: 1.12rem;
 }
-.three{
+.tab{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -224,13 +224,13 @@ nav .snb ul li a:hover{
     width: 1280px;
     margin: 0 auto;
 }
-.three h5 {
+.tab h5 {
     width: 33%;
     text-align: center;
     padding: 20px 0 23px;
     border-bottom: 2px solid #fff;
 }
-.three h5 a{
+.tab h5 a{
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 27px;
@@ -238,50 +238,14 @@ nav .snb ul li a:hover{
     color: #767676;
     text-decoration: none;
 }
-.three > h5:hover a{
+.tab > h5:hover a{
     color: #EB6220;
     font-weight: 700;
 }
-.three > h5:hover{
+.tab > h5:hover{
     border-bottom: 2px solid #EB6220;
 }
-.body{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 100px 0 200px;
-    gap: 40px;
-}
-.body > h2{
-    font-weight: 700;
-    font-size: 2.81rem;
-    line-height: 61px;
-    text-align: center;
-    color:#333
-}
-.body > h2 > b{
-    color: #EB6220;
-}
-.text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 80px;
-}
-.text > p:nth-child(1){
-    font-weight: 400;
-    font-size: 1.56rem;
-    line-height: 50px;
-    letter-spacing: -0.02em;
-    color: #333;
-}
-.text > p:nth-child(2){
-    font-weight: 800;
-    font-size: 2.5rem;
-    line-height: 54px;
-    color: #222222;
-}
+/* pr01페이지와 공통요소 끝 */
 
 /* footer */
 footer{
