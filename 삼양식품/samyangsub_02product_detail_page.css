@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     word-break: keep-all;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 :root{
     font-size: 16px;
@@ -255,85 +255,243 @@ nav .snb ul li a:hover{
     font-weight: 400;
     font-size: 1.12rem;
 }
-/* wrap 제품리스트 */
-.wrap{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    gap: 33px;
+.inner{
     width: 1280px;
-    padding-bottom: 10px;
-}
-.productbox{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    margin: 0 auto;
+}
+.inner .one{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 14px;
-    width: 293.91px;
-    border-radius: 15px;
-    border: 3px solid #ffff;
+    gap: 60px;
 }
-.productbox:hover{
-    border: 3px solid #EB6220;
+.inner .one .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 56px 63px 56px 0px;
+    gap: 10px;
 }
-.pbinner{
+.inner .one .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 80px 0 0;
+    gap: 30px;
+}
+.inner .one .right .productname{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.inner .one .right .productname span{
+    font-weight: 400;
+    font-size: 0.87rem;
+    color: #767676;
+}
+.inner .one .right .productname h2{
+    font-weight: 700;
+    font-size: 3.125rem;
+    text-align: center;
+    color: #EB6220;
+}
+.inner .one .right .information_icon{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+}
+.inner .one .right .information_icon .information1_1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 22px;
+    gap: 4px;
 }
-.pbinner > img{
-    width: 221.91px;
-    height: 202px;
+.inner .one .right .information_icon .information1_1 p:nth-of-type(1){
+    font-weight: 400;
+    font-size: 1.23rem;
+    text-align: center;
+    color: #585858;
 }
-.pbinner > p{
-    font-weight: 500;
+.inner .one .right .information_icon .information1_1 p:nth-of-type(2){
+    font-weight: 700;
+    font-size: 0.68rem;
+    text-align: center;
+    color: #585858;
 }
-.more{
+.inner .one .right .information{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.inner .one .right .information .information2_1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.inner .one .right .information .information2_1 p:nth-child(1){
+    font-weight: 700;
+    text-align: center;
+    color: #767676;
+}
+.inner .one .right .information .information2_1 p:nth-child(2){
+    font-weight: 400;
+    text-align: center;
+    color: #767676;
+}
+.inner .one .right .button{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
 }
-.more a:hover{
-    filter: invert(50%) sepia(65%) saturate(3523%) hue-rotate(349deg) brightness(96%) contrast(92%);
-
+.inner .one .right .button button{
+    padding: 9.5px 39.5px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    border: none;
 }
-/* sec03 */
-.sec03{
+.inner .one .right .button button:nth-child(1){
+    background-color: #585858;
+}
+.inner .one .right .button button:nth-child(2){
+    background-color: #EB6220;
+}
+.detail{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 30px 20px 80px;
-    gap: 89px;
-}
-.page{
-    display: flex;
-    flex-direction: row;
     align-items: flex-start;
-    gap: 70px;
+    padding-right: 157px;
+    gap: 60px;
 }
-.pagenumer{
+.detail .detail_list{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 35px;
-    height: 100%;
-    padding-top: 2px;    
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #585858;
 }
-.pagenumer>p:nth-child(1){
-    text-align: center;
-    line-height: 22px;
+.detail .detail01{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+.detail .detail01 p{
+    font-weight: 400;
+    font-size: 0.87rem;
+    color: #585858;
+}
+.detail .detail02{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+.detail .detail02 .detail02_1{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+}
+.detail .detail02 table{
+    width: 1123px;
+    height: 108px;
+    font-size: 0.75rem;
+}
+.detail .detail02 table tr{
+    font-weight: 400;
+}
+.detail .detail02 table tr th:nth-child(1){
+    background-color: #f0f0f0;
+}
+.detail .detail02 table tr:nth-child(1){
     background-color: #EB6220;
-    width: 37px;
-    height: 37px;
-    border-radius: 37px;
-    color: #fff;
-    font-weight: 500;
-    line-height: 37px;
+    font-weight: 700;
+}
+.detail .detail02 .detail02_1_1 p{
+    font-weight: 300;
+    font-size: 0.62rem;
+    color: #585858;
+    text-align: end;
+}
+.detail .detail02 .detail02_2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.detail .detail02 .detail02_2 p{
+    font-weight: 300;
+    font-size: 0.62rem;
+    color: #585858;
+}
+.detail .detail03{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+.detail .detail03 .detail03_2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+.detail .detail03 .detail03_2 p{
+    font-weight: 400;
+    font-size: 0.87rem;
+    color: #585858;
+}
+.detail .detail03 .detail03_2 h5{
+    border: 1px solid #585858;
+    padding: 10px;
+    color: #585858;
+    font-weight: 700;
+    font-size: 0.87rem;
+}
+.detail .detail03 .detail03_2 b{
+    font-weight: 700;
+    font-size: 0.87rem;
+    color: #585858;
+}
+.detail .detail04,
+.detail .detail05,
+.detail .detail06{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+.detail .detail04 p,
+.detail .detail05 p,
+.detail .detail06 p{
+    font-weight: 400;
+    font-size: 0.87rem;
+    color: #585858;
+}
+.detail .detail06 .detail06_2{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+.detail .detail06 .detail06_2 i{
+    font-size: 0.87rem;
+    color: #585858;
 }
 /* footer */
 footer{
