@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     word-break: keep-all;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 body{
     min-width: 320px;
@@ -90,6 +90,98 @@ nav ul.gnb ul.mSnb li a{
 }
 nav .snb{ display: none; }
 /* 헤더영역 끝 */
+.one{
+    width: 100%;
+    padding: 0;
+}
+.one .one_inner{
+    gap: 10px;
+    height: 100%;
+    background-color: #FFF;
+    background: url(img/삼양식품M_main/패턴m\ copy.png);
+    align-items: center;
+
+}
+.one_inner img{
+    width: 100px;
+    height: 100px;
+}
+.one .one_inner .textbox{
+    padding: 0;
+    align-items: center;
+    gap: 10px;
+}
+.one .one_inner .textbox h1{
+    font-size: 1.5rem;
+    line-height: 1.1rem;
+    font-weight: 700;
+    color: #EB6220;
+}
+.one .one_inner .textbox p{
+    font-size: 0.89rem;
+    line-height: 1rem;
+    color: #000;
+    font-weight: 500;
+}
+.two{
+    padding: 10px
+}
+.two a{
+    font-size: 1rem;
+}
+.inner{
+    width: 100%;
+}
+.inner .one{
+    gap: 0;
+    flex-direction: column;
+    gap: 5px;
+}
+.inner .one .left{
+    padding:10px;
+}
+.inner .one .left img{
+    width: 200px;
+    height: 200px;
+}
+.inner .one .right{
+    padding:0;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+.inner .one .right .productname{
+    gap: 10px;
+}
+.inner .one .right .productname h2{
+    font-size: 1.8rem;
+}
+.inner .one .right .information_icon{
+    gap: 15px;
+}
+.inner .one .right .information_icon .information1_1 p:nth-child(2){
+    font-size: 1rem;
+}
+.information{
+    width: 100%;
+}
+.information .information2_1 p:nth-child(2){
+    font-size: 0.7rem;
+}
+.inner .one .right .button button{
+    padding: 8px;
+}
+.detail{
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+}
+.detail .detail02_1_2 table{
+    width: 100%;
+}
+.detail .detail02_1_2 table th{
+    font-size: 0.5rem;
+}
 /* 푸터 */
 footer{
     width: 100%;
