@@ -123,68 +123,79 @@ nav .snb{ display: none; }
     color: #000;
     font-weight: 500;
 }
-.two{
-    padding: 10px
-}
-.two a{
-    font-size: 1rem;
-}
-.inner{
+.sec01{
+    padding: 0;
     width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-bottom: 2px solid #EB6220;
 }
-.inner .one{
-    gap: 0;
-    flex-direction: column;
+.sec01 .sec01_product{
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+.sec01 svg{
+    display: none;
+}
+.sec01 .sec01_product .menu{
+    padding: 0;
     gap: 5px;
 }
-.inner .one .left{
-    padding:10px;
+.sec01 .sec01_product .menu img{
+    width: 50px;
+    height: 50px;
 }
-.inner .one .left img{
-    width: 200px;
-    height: 200px;
+.sec01 .sec01_product .menu p{
+    font-size: 0.9rem;
 }
-.inner .one .right{
-    padding:0;
-    align-items: center;
+.sec02{
+    width: 100%;
+    padding: 33px 0 33px 0;
+    border-bottom: 2px solid #EB6220;
+}
+.sec02 .productbox{
+    border: none;
+    width: 20%;
+    gap: 5px;
+}
+.sec02 .productbox .pbinner{
     gap: 5px;
     width: 100%;
 }
-.inner .one .right .productname{
-    gap: 10px;
+.sec02 .productbox .pbinner img{
+    width: 70px;
+    height: 70px;
 }
-.inner .one .right .productname h2{
-    font-size: 1.8rem;
+.sec02 .productbox .pbinner p{
+    font-size: 0.8rem;
 }
-.inner .one .right .information_icon{
-    gap: 15px;
+.sec02 .productbox .more img{
+    width: 21px;
+    height: 20px;
 }
-.inner .one .right .information_icon .information1_1 p:nth-child(2){
-    font-size: 1rem;
+.sec03{
+    padding: 20px 0 20px 0
 }
-.information{
-    width: 100%;
+.sec03 svg {
+    display: none;
 }
-.information .information2_1 p:nth-child(2){
-    font-size: 0.7rem;
+.sec03 .page .pageicon img{
+    width: 21px;
+    height: 20px;
 }
-.inner .one .right .button button{
-    padding: 8px;
-}
-.detail{
-    width: 100%;
+.sec03 .page .pagenumer{
     gap: 20px;
-    padding: 10px;
 }
-.detail .detail02_1_2 table{
-    width: 100%;
+.sec03 .page .pagenumer p{
+    font-size: 0.8rem;
 }
-.detail .detail02_1_2 table th{
-    font-size: 0.5rem;
+.sec03 .page .pagenumer p:nth-child(1){
+    border-radius: 10px;
+    width: 21px;
+    height: 20px;
+    line-height: 1.2rem;
 }
-
-
-
 /* 푸터 */
 footer{
     width: 100%;
