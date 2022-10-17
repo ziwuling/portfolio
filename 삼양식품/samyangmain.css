@@ -67,6 +67,7 @@ header.logo{
     font-weight: 700;
     font-size: 1.25rem;
     background-color: #f4f4f6;
+    padding: 0;
 }
 .headerright .fa-bars{
     display: none;
@@ -396,8 +397,9 @@ i[class*='fa-circle-chevron'] {
 .sec03 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/sec03_slide_bg.png);
     background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
 }
 .inner {
     width: 1280px;
@@ -591,10 +593,9 @@ i[class*='fa-circle-chevron'] {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-    padding: 20px 15px 15px 90px;
-    gap: 320px;
+    padding: 20px 30px;
     background-color: #333;
 }
 .footertext {
@@ -617,9 +618,9 @@ footer {
 }
 .footerright {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 41px;
+    flex-direction: column;
+    align-items: center;
+    gap: 29px;
 }
 .sns {
     display: flex;
@@ -637,16 +638,6 @@ footer {
 }
 a:active {
     color: #fff;
-}
-
-.footertop > span:not(:first-child)::before {
-    content: '';
-    display: inline-block;
-    width: 1px;
-    height: 12px;
-    margin: 0 11px 0 7px;
-    vertical-align: -1px;
-    background-color: rgba(255, 255, 255, 0.8);
 }
 .footertop > span {
     font-size: 0.87rem;
@@ -666,7 +657,7 @@ a:active {
     color: #fff;
 }
 
-select:nth-child(2) {
+select{
     width: 230px;
     height: 26px;
     background-color: #fff;
