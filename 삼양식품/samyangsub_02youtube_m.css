@@ -1,0 +1,248 @@
+@charset "UTF-8";
+/* 삼양식품 모바일 CSS */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    outline: 1px solid red;
+}
+body{
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color:#EB6220;
+}
+header .logo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(200%) contrast(200%);
+    width: 35%;
+    scale: 0.8;
+}
+header .headerright{
+    display: none;
+}
+header .mMenuBt{
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(img/삼양식품M_main/Menu.svg) 50% 50% no-repeat;
+    margin: 0 10px 0 0;
+}
+nav{
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: rgba(235,98,32,0.9);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+    color: #fff;
+}
+nav.open{
+    width: 90%;
+}
+nav ul.gnb{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding: 120px 50px 50px; 
+    width: 100%;
+    position: relative;
+}
+nav ul.gnb .mCloseBt{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(img/삼양식품M_main/xbutton.svg) 50% 50% no-repeat;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+nav ul.gnb li.gnbMenu{
+    width: 100%;
+    border-bottom: 2px solid #FFF;
+}
+nav ul.gnb li.gnbMenu .title{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+nav ul.gnb ul.mSnb li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    margin: 1px 0 0 0;
+    display: block;
+    background: rgba(255,187,154,0.5);
+}
+nav ul.gnb ul.mSnb li a{
+    color: #fff;
+    font-weight: 400;
+}
+nav .snb{ display: none; }
+/* 헤더영역 끝 */
+.one{
+    width: 100%; 
+    height: 165px;
+    padding: 0;
+}
+.one .textbox {
+    padding-top: 0;
+    gap: 15px;
+    margin: 0 auto;
+    scale: 0.8;
+}
+.one .textbox p{
+    text-align: center;
+}
+.two{
+    display: none;
+}
+.inner{
+    width: 100%;
+    gap: 0px;
+}
+.inner .tab{
+    width: 100%;
+    gap: 10px;
+}
+.inner .tab h5{
+    padding: 10px;
+}
+.inner .hashtag{
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+}
+.inner .hashtag h6{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 5px;
+}
+.inner .search{
+    width: 100%;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.inner .search select{
+    width: 25%;
+    height: 100%;
+}
+.inner .search .searchinner input{
+    width: 70%;
+}
+.inner .wrap{
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px 0 ;
+}
+.inner .wrap .videolist{
+    width: 45%;
+    gap: 5px;
+}
+.inner .wrap .videolist img{
+    width: 100%;
+}
+.inner .wrap .videolist p{
+    font-size: 1rem;
+}
+.pagenation{
+    width: 100%;
+    padding: 20px 0;
+    gap:0px;
+    
+}
+.pagenation .pageicon{
+    display: flex;
+}
+.pagenation .pageicon img{
+    width: 21px;
+    height: 20px;
+}
+.pagenation .pagenumer{
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    /* padding: 0 20px; */
+}
+.pagenation .pagenumer p{
+    padding: 5px;
+}
+.pagenation .pagenumer p:nth-child(1){
+    background:none;
+    color: #EB6220;
+}
+.pagenation .pagenumer p a{
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+
+
+
+/* 푸터 */
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    background-color: #ccc;
+    
+}
+footer> img{
+    width: 94px;
+    height: 29px;
+    filter: invert(50%) sepia(65%) saturate(3523%) hue-rotate(349deg) brightness(96%) contrast(92%);
+    padding-bottom: 5px;
+}
+.footerbuttom > p{
+    color: #222;
+}
+.footerbuttom > p:nth-child(2){
+    color: #222;
+}
+.sns{
+    color: rgba(34, 34, 34, 0.6);
+    margin: 0 auto;
+    padding-top: 10px;
+    scale: 0.8;
+    gap: 30px;
+}
+.sns > img{
+    filter: invert(12%) sepia(3%) saturate(100%) hue-rotate(239deg) brightness(0%) contrast(95%);
+    opacity: 0.5;
+}
+.footertop{
+    display: none;
+}
+.topbutton{
+    display: none;
+}
+.footerright{
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+}
+select:nth-child(1){
+    border-radius: 10px;
+    width: 230px;
+    height: 35px;
+    background-color: #ccc;
+    color: #fff;
+    border: 1px solid #fff;
+}
+/* footer 영역 */
