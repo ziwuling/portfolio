@@ -44,8 +44,15 @@ nav{
     z-index: 1000;
     color: #fff;
 }
+.nav a{
+    color: #fff;
+}
+nav a:visited{
+    color: #fff;
+}
 nav.open{
     width: 90%;
+    height: 100%;
 }
 nav ul.gnb{
     display: flex;

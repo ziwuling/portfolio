@@ -80,6 +80,9 @@ nav{
     font-weight: 700;
     position: relative;
 }
+.nav a{
+    color: #fff;
+}
 nav:hover{
     border-bottom: 1px solid #ccc;
 }
@@ -431,7 +434,7 @@ i[class*='fa-circle-chevron'] {
     padding: 0;
     gap: 25px;
 }
-.slide03 > .swiper-wrapper > .swiper-slide > img {
+.slide03 > .swiper-wrapper > .swiper-slide > a img {
     filter: brightness(0.5);
 }
 .videoText {
@@ -449,7 +452,7 @@ i[class*='fa-circle-chevron'] {
     font-weight: 500;
     font-size: 0.93rem;
 }
-.slide03 .swiper-slide.swiper-slide-active >img{
+.slide03 .swiper-slide.swiper-slide-active >  a img{
     filter: brightness(1);
 }
 .slide03 .swiper-slide.swiper-slide-active >.videoText{

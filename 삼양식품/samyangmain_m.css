@@ -44,8 +44,18 @@ nav{
     z-index: 1000;
     color: #fff;
 }
+.nav a{
+    color: #fff;
+}
+nav a:visited{
+    color: #fff;
+}
 nav.open{
     width: 90%;
+    height: 100%;
+}
+.nav a:visited{
+    color: #fff;
 }
 nav ul.gnb{
     display: flex;
@@ -162,8 +172,9 @@ nav .snb{ display: none; }
 }
 .slide03-2 img{
     border-radius: 0px 20px;
+    width: 100px;
 }
-.slide03 > .swiper-wrapper > .swiper-slide > img {
+.slide03 > .swiper-wrapper > .swiper-slide > a img {
     filter: brightness(1);
 }
 .videoText{
