@@ -346,11 +346,16 @@ nav .snb ul li a:hover{
     align-items: center;
     gap: 35px;
 }
-.pagenumer p{
-    padding: 7.5px 13.5px;
+.pagenumer a{
+    width: 40px;
+    height: 40px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.pagenumer p:nth-child(1){
+.pagenumer a:nth-child(1){
     background-color: #EB6220;
     color: #fff;
 }
