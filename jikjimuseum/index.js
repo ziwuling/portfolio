@@ -59,6 +59,14 @@ $(function () {
     return false;
   });
   // 퀵메뉴 & top 기능
+  $(function(){
+    $('.header .mMenuBt').click(function(){
+      $('.sec01 .sec01_inner .header .gnb').show()
+    });
+    $('.header .mCloseBt').click(function(){
+      $('.sec01 .sec01_inner .header .gnb').hide()
+    });
+  });
 });
 
 
