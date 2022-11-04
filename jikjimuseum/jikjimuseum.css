@@ -48,6 +48,7 @@ body > .top {
 }
 .top a {
     color: #fff;
+    width: 40x;
 }
 .top .inner .login a {
     display: flex;
