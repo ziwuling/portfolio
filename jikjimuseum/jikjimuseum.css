@@ -273,6 +273,7 @@ body > .top {
     font-size: 1.25rem;
     line-height: 1.68rem;
     text-align: center;
+    cursor: pointer;
 }
 .sec01 .sec01_inner .bottom .bottom_right .right02 button:hover {
     text-decoration: underline;

@@ -82,6 +82,9 @@ nav ul.gnb li.gnbMenu .title{
     line-height: 60px;
     text-align: center;
 }
+nav ul.gnb li.gnbMenu .title a{
+    color: #fff;
+}
 nav ul.gnb ul.mSnb li{
     width: 100%;
     height: 40px;
@@ -92,7 +95,7 @@ nav ul.gnb ul.mSnb li{
     background: rgba(255,187,154,0.5);
 }
 nav ul.gnb ul.mSnb li a{
-    color: #fff;
+    color: #000;
     font-weight: 400;
 }
 nav .snb{ display: none; }
