@@ -293,7 +293,6 @@ a {
     width: 1920px;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1000;
-    padding-bottom: 30px;
 }
 .snb ul li ul li:hover {
     text-decoration: underline;
