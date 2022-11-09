@@ -113,7 +113,7 @@ window.addEventListener('load', sec03Func);
 window.addEventListener('scroll', sec03Func);
 // sec03 스크롤애니메이션
 
-$('.parallax-window').parallax({ imageSrc:'img/parallax.png'});
+$('.parallax-window').parallax({ imageSrc:'img/Parallax_img.jpg'});
 // sec04 패럴렉스
 
 var posterimg = new Swiper(".posterimg", {
