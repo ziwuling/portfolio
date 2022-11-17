@@ -36,7 +36,14 @@ $(function(){
     return false;
   });
   // top버튼
+  $('.snb').hide();
   $('.snbtitle li').click(function(){
     $(this).addClass('on').siblings().removeClass('on');
+  });
+  $('.gnb').mouseenter(function(){
+    $('.snb').stop().slideDown();
+  });
+  $('.gnb').mouseleave(function(){
+    $('.snb').stop().slideUp();
   });
 })
