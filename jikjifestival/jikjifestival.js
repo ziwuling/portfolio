@@ -30,8 +30,13 @@ var sec02slide = new Swiper(".sec02slide", {
     },
   });
 //   sec03슬라이드
-$('.topbutton').click(function(){
-  $('body,html').animate({scrollTop:0},1000)
-  return false;
-});
-// top버튼
+$(function(){
+  $('.topbutton').click(function(){
+    $('body,html').animate({scrollTop:0},1000)
+    return false;
+  });
+  // top버튼
+  $('.snbtitle li').click(function(){
+    $(this).addClass('on').siblings().removeClass('on');
+  });
+})
