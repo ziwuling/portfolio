@@ -10,8 +10,7 @@
     padding: 0;
     word-break: keep-all;
     box-sizing: border-box;
-    outline: 1px solid blue;
-    /* font-family: 'NanumSquare'; */
+    /* outline: 1px solid blue; */
 }
 :root {
     font-size: 16px;
