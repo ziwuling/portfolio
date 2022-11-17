@@ -26,7 +26,7 @@ header .gnbmenu{
     display: none;
 }
 header .top{
-    height: 100px;
+    min-height: 130px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,6 +35,7 @@ header .top{
 }
 header .top .logo img{
     display: block;
+    width: 162px;
 }
 header .top .gnb{
     display: flex;
@@ -52,7 +53,7 @@ header .top .gnb li a{
 header .top .gnb li a::after{
     display: block;
     content: '';
-    border-bottom: solid 3px #EC5D63;
+    border-bottom: solid 4px #EC5D63;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
@@ -416,12 +417,16 @@ header .snb li a{
 .sec03 .sec03_01 .right .bottom_right .page{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 0.87rem;
 }
 .sec03 .sec03_01 .right .bottom_right .page p{
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.12rem;
     color: #EC5D63;
+}
+.sec03 .sec03_01 .right .bottom_right .page p:first-child{
+    font-size: 1.37rem;
 }
 .sec03 .sec03_01 .right .bottom_right .imgs a{
     padding: 1.62rem 0.78rem;
@@ -431,7 +436,7 @@ header .snb li a{
     height: 88px;
 }
 .sec03 .sec03_01 .right .bottom_right .imgs img:nth-child(2){
-    height: 252px;
+    height: 246px;
     display: block;
 }
 .sec03 .sec03_01 > img:last-child{
@@ -439,8 +444,6 @@ header .snb li a{
     z-index: 100;
     left: -54px;
     bottom: -77px;
-}
-.sec03 .sec03_01 > img:last-child{
     animation: circle 6s linear infinite; transform-origin: 50% 50%;
 }
 @keyframes circle{
@@ -461,7 +464,7 @@ header .snb li a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 10.87rem;
+    margin-top: 9.5rem;
 }
 .sec03 .sec03_02 .right .right_top{
     display: flex;
@@ -499,11 +502,15 @@ header .snb li a{
     flex-direction: row;
     padding: 1.37rem 2.31rem;
     gap: 0.87rem;
+    align-items: center;
 }
 .sec03 .sec03_02 .right .right_top .info .page p{
-    font-size: 1.25rem;
+    font-size: 1.12rem;
     font-weight: 700;
     color:#384496;
+}
+.sec03 .sec03_02 .right .right_top .info .page p:first-child{
+    font-size: 1.37rem;
 }
 .sec03 .sec03_02 .right .right_top .direct{
     width: 767px;
@@ -515,10 +522,17 @@ header .snb li a{
 }
 .sec03 .sec03_02 .right .right_top .direct button{
     padding: 1.31rem 3.12rem;
-    background: #384496;
-    color: #fff;
+    background: #fff;
+    color: #384496;
     border: none;
     margin-top: 3.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 1px solid #384496;
+}
+.sec03 .sec03_02 .right .right_top .direct button:hover{
+    box-shadow: 0 80px 0 0 #384496 inset;
+    color: #fff;
 }
 .sec03 .sec03_02 .right .right_bottom{
     display: flex;
@@ -528,8 +542,8 @@ header .snb li a{
     height: 216px;
     background-color: #384496;
     color: #fff;
-    padding: 1.25rem 1.37rem;
-    justify-content: space-between;
+    padding: 0 1.37rem;
+    justify-content: space-around;
 }
 .sec03 .sec03_02 .right .right_bottom h3{
     font-size: 1.25rem;
@@ -541,6 +555,7 @@ header .snb li a{
     position: absolute;
     left: -5%;
     top: -8%;
+    animation: circle 6s linear infinite; transform-origin: 50% 50%;
 }
 /* sec03 2nd slide */
 .sec03 .sec03_03{
@@ -551,8 +566,9 @@ header .snb li a{
     align-items: center;
     position: relative;
 }
-.sec03 .sec03_03 > img{
+.sec03 .sec03_03 > img:first-child{
     padding: 3.68rem 0;
+    height: 100%;
 }
 .sec03 .sec03_03 .right{
     display: flex;
@@ -565,7 +581,7 @@ header .snb li a{
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    height: 767.75px;
+    height: 785px;
     padding-top: 5.18rem;
 }
 .sec03 .sec03_03 .right .bottom_left .textbox{
@@ -594,9 +610,15 @@ header .snb li a{
 }
 .sec03 .sec03_03 .right .bottom_left .textbox button{
     padding: 1.31rem 3.12rem;
-    background: #EC5D63;
-    color: #fff;
+    background: #fff;
+    color: #EC5D63;
     border: none;
+    transition: all 0.5s;
+    border: 1px solid #EC5D63;
+}
+.sec03 .sec03_03 .right .bottom_left .textbox button:hover{
+    box-shadow: 0 80px 0 0 #EC5D63 inset;
+    color: #fff;
 }
 .sec03 .sec03_03 .right .bottom_left .info{
     display: flex;
@@ -620,7 +642,7 @@ header .snb li a{
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
-    padding-bottom: 213px;
+    padding-bottom: 215px;
 }
 .sec03 .sec03_03 .right .bottom_right .page{
     display: flex;
@@ -629,14 +651,21 @@ header .snb li a{
     gap: 0.87rem;
 }
 .sec03 .sec03_03 .right .bottom_right .page p{
-    font-size: 1.25rem;
+    font-size: 1.12rem;
     font-weight: 700;
     color: #EC5D63;
 }
+.sec03 .sec03_03 .right .bottom_right .page p:first-child{
+    font-size: 1.37rem;
+}
+.sec03 .sec03_03 .right .bottom_right img:nth-child(1){
+    width: 395px;
+}
 .sec03 .sec03_03 > img:last-child{
     position: absolute;
-    top: -16%;
+    top: -5%;
     left: -5%;
+    animation: circle 6s linear infinite; transform-origin: 50% 50%;
 }
 /* sec03 3rd slide */
 .sec03 .slidesnb{
@@ -886,4 +915,14 @@ footer .topbutton{
     position: absolute;
     right: 20%;
     top: 2%;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+footer .topbutton:hover{
+    animation: bounce 0.3s linear 0s infinite alternate;
+    margin-top: 0;;
+}
+@keyframes bounce {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
 }
