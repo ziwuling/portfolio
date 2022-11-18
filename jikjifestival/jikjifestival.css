@@ -791,22 +791,21 @@ header nav .gnb .snb li a{
     cursor: pointer;
     transition: all ease 0.5s;
 }
-.sec05 .inner .map  > div{
-    gap: 1rem;
-}
 .sec05 .inner .map div:hover{
     scale: 110%;
 }
 .sec05 .inner .map div:nth-child(5){
     justify-content: flex-start;
-    gap: 3.43rem;
 }
 .sec05 .inner .map div:nth-child(6){
     padding-left: 3.12rem;
 }
+.sec05 .inner .map div:nth-child(7){
+    align-items: flex-start;
+}
 .sec05 .inner .map div:nth-child(8){
-    gap: 3.12rem;
-    justify-content: flex-start;
+    gap: 0.12rem;
+    justify-content: center;
 }
 .sec05 .inner .map div:nth-child(9){
     justify-content: flex-start;
