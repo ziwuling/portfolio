@@ -46,4 +46,12 @@ $(function(){
   $('.gnb').mouseleave(function(){
     $('.snb').stop().slideUp();
   });
+  $(function(){
+    $('.map img').click(function(){
+      $('.modal').show();
+    });
+    $('.map_02 button').click(function(){
+      $('.modal').hide();
+    });
+  });
 })

@@ -752,6 +752,7 @@ header nav .gnb .snb li a{
     background-repeat: no-repeat;
     background-position: 50% 80%;
     border-bottom: 2px solid #CCCCCC;
+    position: relative;
 }
 .sec05 .inner{
     display: flex;
@@ -831,7 +832,81 @@ header nav .gnb .snb li a{
 .sec05 .inner .map > div:hover span{
     opacity: 1;
 }
-
+.sec05 .inner .modal{
+    position: absolute;
+    top:10%;
+    left: 30%;
+    z-index: 1000;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    padding: 1.25rem;
+}
+.sec05 .inner .modal .information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+.sec05 .inner .modal .information .title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sec05 .inner .modal .information .title h3{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.sec05 .inner .modal .information b{
+    color: #EC5D63;
+}
+.sec05 .inner .modal .information p{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.sec05 .inner .modal .information .img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sec05 .inner .modal .map_02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.93rem;
+}
+.sec05 .inner .modal .map_02 .name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.62rem;
+}
+.sec05 .inner .modal .map_02 .name h4{
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #EC5D63;
+}
+.sec05 .inner .modal .map_02 .name p{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.sec05 .inner .modal .map_02 .name span{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.sec05 .inner .modal .map_02 button{
+    padding: 0.62rem;
+    background-color: #fff;
+    border: 1px solid #EC5D63;
+    color: #EC5D63;
+    cursor: pointer;
+}
 /* sec05 */
 .sec06{
     width: 1320px;
