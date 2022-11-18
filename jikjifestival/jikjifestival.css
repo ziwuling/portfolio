@@ -341,7 +341,9 @@ header nav .gnb .snb li a{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    position: relative
+    position: relative;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),inset 5px 5px 100px rgba(0, 0, 0, 0.1);
+
 }
 .sec03 .sec03_01 .right{
     display: flex;
@@ -671,21 +673,19 @@ header nav .gnb .snb li a{
     animation: circle 6s linear infinite; transform-origin: 50% 50%;
 }
 /* sec03 3rd slide */
-.sec03 .slidesnb{
-    position: absolute;
-    top: 0;
-    left: 55%;
+.swiper-pagination-bullet{
+    width: 200px;
+    background: none;
 }
-.sec03 .slidesnb .snbtitle{
+.swiper-pagination-bullet span{
+    font-weight: 700;
+}
+.sec03 .swiper-pagination{
     display: flex;
     flex-direction: row;
-    width: 500px;
-    justify-content: space-between;
-    font-weight: 700;
-    cursor: pointer;
-}
-.sec03 .slidesnb .snbtitle li.on{
-    color: #EC5D63;
+    position: absolute;
+    top: 5%;
+    left: 50%;
 }
 /* sec03 */
 .sec04{
