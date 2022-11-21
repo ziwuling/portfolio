@@ -211,7 +211,7 @@ header .inner button:hover{
 }
 .sec02 .top .left > p:last-child{
     font-weight: 700;
-    font-size: 4.37rem;
+    font-size: 4rem;
     line-height: 84px;
     cursor: pointer;
   -webkit-text-stroke-color: rgba(206, 206, 206, 0.2);
