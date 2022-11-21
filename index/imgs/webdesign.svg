@@ -1,0 +1,16 @@
+<svg id="그룹_2" data-name="그룹 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69.377" height="58.733" viewBox="0 0 69.377 58.733">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_5" data-name="사각형 5" width="69.377" height="58.733" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_1" data-name="그룹 1" clip-path="url(#clip-path)">
+    <path id="패스_1" data-name="패스 1" d="M68.012,58.733H1.365A1.366,1.366,0,0,1,0,57.369v-56A1.366,1.366,0,0,1,1.365,0H68.012a1.366,1.366,0,0,1,1.365,1.365v56a1.366,1.366,0,0,1-1.365,1.365M2.73,56H66.647V2.73H2.73Z" fill="#fff"/>
+    <path id="패스_2" data-name="패스 2" d="M66.992,14.6H1.735a1.365,1.365,0,1,1,0-2.73H66.992a1.365,1.365,0,1,1,0,2.73" transform="translate(0.034 1.09)" fill="#fff"/>
+    <rect id="사각형_2" data-name="사각형 2" width="3.992" height="2.73" transform="translate(49.324 7.234)" fill="#fff"/>
+    <rect id="사각형_3" data-name="사각형 3" width="3.992" height="2.73" transform="translate(57.422 7.234)" fill="#fff"/>
+    <path id="패스_3" data-name="패스 3" d="M39.014,41.22l-1.458-2.307L47.7,32.507,37.556,26.1l1.458-2.307,13.8,8.715Z" transform="translate(3.451 2.186)" fill="#fff"/>
+    <path id="패스_4" data-name="패스 4" d="M26.024,41.22,12.23,32.508l13.794-8.715L27.482,26.1,17.34,32.507l10.141,6.406Z" transform="translate(1.124 2.186)" fill="#fff"/>
+    <rect id="사각형_4" data-name="사각형 4" width="17.117" height="2.729" transform="matrix(0.277, -0.961, 0.961, 0.277, 31.359, 42.39)" fill="#fff"/>
+  </g>
+</svg>
