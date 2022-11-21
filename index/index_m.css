@@ -1,0 +1,270 @@
+@charset "utf-8";
+*{
+    /* outline: 1px solid red; */
+}
+body{
+    min-width: 320px;
+    max-width: 640px;
+}
+/* header{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    border: none;
+    width: 100vw;
+    padding: 0;
+    background-color: #fff;
+}
+header .inner{
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    gap: 20px;
+    display: none;
+}
+header .mMenuBt{
+    display: block;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    font-size: 2rem;
+}
+header .inner > a{
+    padding: 20px 0 0 0;
+}
+header .inner .nav{
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+    justify-content: flex-start;
+}
+header .inner .nav li a.on{
+    color: #000;
+} */
+header{
+    display: none;
+}
+/* header */
+.sec01{
+    width: 100vw;
+    padding: 0;
+    height: 60vh;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+.sec01 > img{
+    width: 200px;
+    padding: 20px;
+}
+.sec01 .inner{
+    width: 100vw;
+}
+.sec01 .inner .textbox{
+    width: 300px;
+    height: 50px;
+    padding:30px 0 0 20px ;
+}
+.sec01 .inner .textbox h2{
+    font-size: 2.37rem;
+    z-index: 1000;
+}
+.sec01 .inner .textbox p{
+    font-size: 0.9rem;
+    width: 300px;
+}
+.sec01 .inner > span{
+    display: none;
+}
+.sec01 .scroll{
+    position: absolute;
+    top: 82%;
+}
+.sec01 .scroll p{
+    font-size: 1.1rem;
+}
+.sec01 .scroll img{
+    width: 40%;
+}
+/* sec01 */
+.sec02{
+    width: 100vw;
+    padding: 0;
+    gap: 0;
+}
+.sec02 .top{
+    width: 100%;
+    gap: 0;
+}
+.sec02 .top .left{
+    gap: 0;
+    width: 100vw;
+    align-items: center;
+}
+.sec02 .top .left .textbox{
+    justify-content: flex-start;
+    gap: 0;
+    padding: 30px 0 0 20px;
+    height: 230px;
+    gap: 10px;
+}
+.sec02 .top .left .textbox h2{
+    font-size: 2.37rem;
+}
+.sec02 .top .left .textbox p{
+    font-size: 0.9rem;
+}
+.sec02 .top > img{
+    display: none;
+}
+.sec02 .top .left > p:last-child{
+    font-size: 3rem;
+    line-height: 100%;
+}
+.sec02 .bottom{
+    width: 100vw;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.sec02 .bottom .skill{
+    gap: 7px;
+}
+.sec02 .bottom .skill .bg{
+    width: 70px;
+    height: 70px;
+}
+.sec02 .bottom .skill .bg > img{
+    width: 30px;
+}
+.sec02 .bottom .skill .info p, .sec02 .bottom .skill p{
+    font-size: 0.9rem;
+}
+.sec03{
+    flex-direction: column;
+    width: 100vw;
+    padding: 0;
+    gap: 20px;
+}
+.sec03 .title{
+    padding: 30px 0 0 20px;
+    align-items: center;
+}
+.sec03 .title h2{
+    font-size: 2.37rem;
+}
+.sec03 .title span{
+    font-size: 2.37rem;
+}
+.sec03 .skill{
+    width: 100vw;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+.sec03 .skill .group img:first-child{
+    width: 62px;
+}
+.sec03 .skill .group .percent p{
+    font-size: 0.9rem;
+}
+.sec03 .skill .group .percent span{
+    font-size: 1rem;
+}
+/* sec03 */
+.sec04{
+    width: 100vw;
+    padding: 30px 0 0 20px;
+}
+.sec04 h2{
+    padding: 0;
+    font-size: 2.37rem;
+}
+.sec04 .swiper-wrapper{
+    width: 100vw;
+    height: 70vh;
+}
+.sec04 .project01{
+    width: 100vw;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+.sec04 .project01 img:first-child{
+    width: 300px;
+}
+.sec04 .project01 .info .top{
+    align-items: center;
+    height: 150px;
+    justify-content: flex-start;
+    gap: 0;
+}
+.sec04 .project01 .info .top .title{
+    flex-direction: row;
+    gap: 0;
+    width: 100vw;
+    justify-content: center;
+}
+.sec04 .project01 .info .top .title h3 {
+    font-size: 1.5rem;
+}
+.swiper-button-next, .swiper-button-prev{
+    display: none;
+}
+.sec04 .project01 .info .top .title .subtitle{
+    flex-direction: column;
+    width: 140px;
+}
+.sec04 .project01 .info .top .title .subtitle span{
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.sec04 .project01 .info .top .tag {
+    padding: 20px 30px;
+    justify-content: center;
+}
+.sec04 .project01 .info{
+    width: 100vw;
+}
+.sec04 .project01 .info .top .tag a,
+.sec04 .project01 .info .top .tag a:active,
+.sec04 .project01 .info .top .tag a:visited{
+    padding: 2px 5px;
+    font-size: 1rem;
+}
+.sec04 .project01 .info p:last-child{
+    font-size: 0.9rem;
+}
+/* .sec04 */
+.sec05{
+    width: 100vw;
+    padding: 0;
+    gap: 20px;
+    padding: 20px 0;
+}
+.sec05 .end{
+    width: 100vw;
+    gap: 0;
+    justify-content: center;
+}
+.sec05 .end h5{
+    font-size: 1rem;
+}
+.sec05 .end span{
+    font-size: 1rem;
+}
+.sec05 .call a,
+.sec05 .call a:active,
+.sec05 .call a:visited{
+    width: 150px;
+    height: 30px;
+    font-size: 0.8rem;
+    line-height: 30px;
+    font-weight: 400;
+}
+/* sec05 */
+footer{
+    width: 100vw;
+    font-size: 0.06rem;
+}

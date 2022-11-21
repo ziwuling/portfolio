@@ -42,6 +42,9 @@ header .inner{
     width: 1280px;
     position: relative;
 }
+header .mMenuBt{
+    display: none;
+}
 header .inner .nav{
     width: 584px;
     display: flex;
