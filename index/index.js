@@ -19,6 +19,9 @@ $(function () {
   $('.close').click(function () {
     $('.sendmail').css('display', 'none');
   });
+  $('.call > a:first-child').click(function(){
+    $('.sendmail').css('display', 'flex');
+  });
   // 카운터
   var count0 = count1 = count2 = count3 = count4 = count5 = count6 = 0;
 
@@ -103,10 +106,10 @@ $(function () {
   }
   // mail
   document.querySelector('#contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // submit이벤트 막기
-    const fromName = document.querySelector('input[name="from_name"]').value; // 전송자 이름 추출
+    event.preventDefault();
+    const fromName = document.querySelector('input[name="from_name"]').value;
 
-    emailjs.init("nADFt3EPe95zGD-gB"); // API keys
+    emailjs.init("nADFt3EPe95zGD-gB");
     emailjs.sendForm('service_6e55q2e', 'template_d76j924', this)
         .then(function() {
             alert(`${fromName}님, 메일 전송 완료 되었습니다 :)`)
