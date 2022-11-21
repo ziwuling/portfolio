@@ -18,6 +18,7 @@ $(function(){
     $('.close').click(function(){
         $('.sendmail').css('display', 'none')
     });
+    // 카운터
     var count0 = count1 = count2 = count3 = count4 = count5 = count6 = 0;
 
   timeCounter();
@@ -99,6 +100,24 @@ $(function(){
     }
     
   }
+  // mail
+  document.querySelector('#contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const fromName = document.querySelector('input[name="from_name"]').value;
+
+    emailjs.init("ANq4wvyeU2hpxJM_MP00_"); // API keys
+    emailjs.sendForm('leejiwoo', 'leejiwooTemplate', this)
+        .then(function() {
+            alert(`${fromName}님, 메일 전송 완료 되었습니다 :)`)
+        }, function(error) {
+            alert(`${fromName}님, 메일 전송이 실패했습니다 :(`)
+            console.log('전송실패', error);
+        });
 });
+(function(){
+  emailjs.init("service_6e55q2e");
+})
+});
+
 
   
