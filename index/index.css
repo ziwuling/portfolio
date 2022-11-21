@@ -440,7 +440,7 @@ header .inner button:hover{
 .sec04 .project02{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     gap: 60px;
     width: 1280px;
     height: 499px;
