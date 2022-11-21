@@ -3,23 +3,24 @@ var sec04 = new Swiper(".sec04", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  loop:true,
+  loop: true,
 });
-$(function(){
-    $(".nav li").click(function(){
-        $("html, body").animate({
-            scrollTop:$(this.hash).offset.top
-        },300);
-    });
-    $('.sendmail').css('display','none');
-    $('.inner button').click(function(){
-        $('.sendmail').css('display', 'flex');
-    });
-    $('.close').click(function(){
-        $('.sendmail').css('display', 'none')
-    });
-    // 카운터
-    var count0 = count1 = count2 = count3 = count4 = count5 = count6 = 0;
+$(function () {
+  $(".nav li").click(function () {
+    $("html, body").animate({
+      scrollTop: $(this.hash).offset.top
+    }, 300);
+  });
+  // 메일폼 보이기
+  $('.sendmail').css('display', 'none');
+  $('.inner button').click(function () {
+    $('.sendmail').css('display', 'flex');
+  });
+  $('.close').click(function () {
+    $('.sendmail').css('display', 'none');
+  });
+  // 카운터
+  var count0 = count1 = count2 = count3 = count4 = count5 = count6 = 0;
 
   timeCounter();
 
@@ -98,15 +99,15 @@ $(function(){
         $(".number").eq(6).text(count6 + "%");
       }
     }
-    
+
   }
   // mail
   document.querySelector('#contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const fromName = document.querySelector('input[name="from_name"]').value;
+    event.preventDefault(); // submit이벤트 막기
+    const fromName = document.querySelector('input[name="from_name"]').value; // 전송자 이름 추출
 
-    emailjs.init("ANq4wvyeU2hpxJM_MP00_"); // API keys
-    emailjs.sendForm('leejiwoo', 'leejiwooTemplate', this)
+    emailjs.init("nADFt3EPe95zGD-gB"); // API keys
+    emailjs.sendForm('service_6e55q2e', 'template_d76j924', this)
         .then(function() {
             alert(`${fromName}님, 메일 전송 완료 되었습니다 :)`)
         }, function(error) {
@@ -114,11 +115,6 @@ $(function(){
             console.log('전송실패', error);
         });
 });
-(function(){
-  emailjs.init("service_6e55q2e");
-})
-
 });
 
 
-  
