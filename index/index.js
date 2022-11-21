@@ -12,7 +12,6 @@ $(function () {
     }, 300);
   });
   // 메일폼 보이기
-  $('.sendmail').css('display', 'none');
   $('.inner button').click(function () {
     $('.sendmail').css('display', 'flex');
   });
