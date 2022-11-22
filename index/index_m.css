@@ -175,21 +175,26 @@ header{
 /* sec03 */
 .sec04{
     width: 100vw;
-    padding: 30px 0 0 20px;
+    padding: 0;
 }
 .sec04 h2{
     padding: 0;
     font-size: 2.37rem;
+    padding: 20px 0 10px 20px;
 }
 .sec04 .swiper-wrapper{
     width: 100vw;
-    height: 70vh;
+    /* height: 70vh; */
 }
 .sec04 .project01{
     width: 100vw;
     align-items: center;
     gap: 30px;
     flex-direction: column;
+    /* display: none; */
+}
+.sec04 .project01 .info{
+    gap: 10px;
 }
 .sec04 .project01 img:first-child{
     width: 300px;
@@ -226,6 +231,7 @@ header{
 }
 .sec04 .project01 .info{
     width: 100vw;
+    align-items: center;
 }
 .sec04 .project01 .info .top .tag a,
 .sec04 .project01 .info .top .tag a:active,
@@ -237,6 +243,98 @@ header{
     font-size: 0.9rem;
 }
 /* .sec04 */
+/* project01 */
+.sec04 .project02{
+    width: 100vw;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    /* display: none; */
+}
+.sec04 .project02 .info{
+    gap: 10px;
+    align-items: center;
+    width: 100vw;
+}
+.sec04 .project02 img:first-child{
+    width: 300px;
+}
+.sec04 .project02 .info .top{
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+}
+.sec04 .project02 .info .top h3 {
+    font-size: 1.5rem;
+}
+.sec04 .project02 .info .top a,
+.sec04 .project02 .info .top a:active,
+.sec04 .project02 .info .top a:visited{
+    padding: 2px 5px;
+    font-size: 1rem;
+}
+.sec04 .project02 .info p:last-child{
+    font-size: 0.9rem;
+    text-align: center;
+}
+/* project02 */
+.sec04 .project03{
+    width: 100vw;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 20px;
+}
+.sec04 .project03 .info{
+    gap: 10px;
+    width: 100vw;
+    align-items: center;
+}
+.sec04 .project03 img:first-child{
+    width: 300px;
+}
+.sec04 .project03 .info .top{
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+}
+.sec04 .project03 .info .top .title{
+    flex-direction: row;
+    gap: 0;
+    width: 90vw;
+    justify-content: center;
+}
+.sec04 .project03 .info .top .title > h3:first-child {
+    font-size: 1.23rem;
+}
+.sec04 .project03 .info .top .title .subtitle h3{
+    font-size: 1.23rem;
+}
+.sec04 .project03 .info .top .title .subtitle{
+    flex-direction: column;
+    width: 100px;
+    align-items: flex-end;
+}
+.sec04 .project03 .info .top .title .subtitle span{
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.sec04 .project03 .info .top .tag {
+    padding: 20px 30px;
+    justify-content: center;
+}
+.sec04 .project03 .info .top a,
+.sec04 .project03 .info .top a:active,
+.sec04 .project03 .info .top a:visited{
+    padding: 2px 5px;
+    font-size: 1rem;
+}
+.sec04 .project03 .info p:last-child{
+    font-size: 0.9rem;
+    text-align: center;
+}
+/* project03 */
 .sec05{
     width: 100vw;
     padding: 0;
