@@ -119,15 +119,4 @@ $(function () {
             console.log('전송실패', error);
         });
 });
-  // if($(window).width() < 640){
-  //   $('.mMenuBt').click(function(){
-  //     $('header .inner').css('display', 'flex');
-  //     $('.mMenuBt').text(function(e, text){
-  //       return text === 'close' ? 'mMenuBt' : 'close'
-  //     })
-  //   });
-  // };
-  $('.mMenuBt').click(function(){
-    $('header .inner').show();
-  });
 });

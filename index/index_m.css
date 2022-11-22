@@ -216,9 +216,22 @@ header{
 .sec04 .project01 .info .top .title h3 {
     font-size: 1.5rem;
 }
-.swiper-button-next, .swiper-button-prev{
-    display: none;
+.swiper-button-next,
+.swiper-button-prev{
+    top: 8%;
 }
+.swiper-button-next{
+    right: 10%;
+}
+.swiper-button-prev{
+    left: 75%;
+}
+.swiper-button-next img,
+.swiper-button-prev img
+{
+    width: 20px;
+}
+
 .sec04 .project01 .info .top .title .subtitle{
     flex-direction: column;
     width: 140px;
