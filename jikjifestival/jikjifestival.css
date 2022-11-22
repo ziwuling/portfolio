@@ -288,6 +288,10 @@ header nav .gnb .snb li a{
     align-items: flex-start;
     height: 425px;
     width: 823px;
+    cursor: pointer;
+}
+.sec02 .swiper-wrapper .swiper-slide .textbox:hover p{
+    text-decoration: underline;
 }
 .sec02 .swiper-wrapper .swiper-slide{
     display: flex;
