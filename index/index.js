@@ -1,27 +1,11 @@
-// var sec04 = new Swiper(".sec04", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   loop: true,
-// });
+var sec04 = new Swiper(".sec04", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  loop: true,
+});
 
-// 반응형 다 맞추면 위에꺼 주석풀고 아래꺼 지우기
-// var sec04 = undefined;
-//   function sec04() {
-//     if ($(window).width() > 640 || sec04 == undefined) {
-//       var sec04 = new Swiper(".sec04", {
-//         autoplay: {
-//           delay: 5000
-//         },
-//         loop: true,
-//         effect: "fade",
-//       });
-//     } else if ($(window).width() <= 640 && sec04 != undefined) {
-//       sec04.destroy();
-//       sec04 = undefined;
-//     }
-//   }
 
 $(function () {
   $(".nav li").click(function () {
