@@ -355,7 +355,7 @@ header .inner button:hover{
 /* sec03 */
 .sec04{
     width: 100%;
-    padding: 93px 0 143px 0px;
+    padding: 93px 0 143px 0;
     background: #F5F5F5;
 }
 .sec04 .swiper-wrapper{

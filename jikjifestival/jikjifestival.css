@@ -575,7 +575,7 @@ header nav .gnb .snb li a{
     flex-direction: row;
     align-items: center;
     position: relative;
-    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.2),inset 5px 20px 100px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.2),inset 5px 20px 100px rgba(0, 0, 0, 0.1);
 }
 .sec03 .sec03_03 > img:first-child{
     padding: 3.68rem 0;

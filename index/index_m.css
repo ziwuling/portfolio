@@ -1,7 +1,4 @@
 @charset "utf-8";
-*{
-    /* outline: 1px solid red; */
-}
 body{
     min-width: 320px;
     max-width: 640px;
