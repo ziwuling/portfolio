@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 100vh;
+    height: 0vh;
     border: none;
     width: 100vw;
     padding: 0;
@@ -23,11 +23,13 @@ header .inner{
     width: 100vw;
     gap: 20px;
     display: none;
+    background-color: #fff;
 }
-header .mMenuBt{
+.mMenuBt{
     display: block;
     position: absolute;
-    top: 3%;
+    z-index: 1000;
+    top: 2%;
     right: 5%;
     font-size: 2rem;
 }
