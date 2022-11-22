@@ -649,6 +649,7 @@ footer{
 /* footer */
 .sendmail{
     position: absolute;
+    z-index: 1000;
     background-color: #F5F5F5;
     top: 100%;
     left: 25%;
